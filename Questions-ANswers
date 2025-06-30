@@ -1,0 +1,54 @@
+Q2: How would you deploy an application using Docker?
+“To deploy an application using Docker, I would first write a Dockerfile that installs all the dependencies and sets the entry point.
+Then I would build the Docker image using docker build, and run it using docker run -p to expose the required port. If the application needs additional services like a database, I would use Docker Compose to manage multiple containers together. This ensures the app runs consistently across environments.”
+
+Q3: What is CI/CD? How have you used Jenkins in your projects?
+“CI/CD stands for Continuous Integration and Continuous Deployment. It helps automate the software development process by automatically testing, building, and deploying code.
+In my internship, I used Jenkins to set up pipelines that pulled code from GitHub, built Docker images, and deployed them to test servers. This made deployments faster and reduced manual errors.”
+
+ Q4: How do you monitor a deployed application?
+“I monitor deployed applications using Prometheus and Grafana. I set up Prometheus to collect metrics like CPU usage, memory, and request rates. Then I use Grafana to create dashboards and visualize these metrics.
+I also configure alert rules so that I get notified when something goes wrong, like high CPU usage or service downtime.”
+
+Q5: Suppose a deployment fails. How will you troubleshoot it?
+“If a deployment fails, I first check the logs — either in Jenkins console output or Docker logs — to identify the error.
+I look at the error message, check if there’s a missing environment variable, port conflict, or image build failure. I also verify configuration files, repo URLs, and permission issues. Once the issue is fixed, I rerun the pipeline and monitor the deployment.”
+
+
+Q6: What is the difference between a container and a virtual machine?
+“A virtual machine runs an entire OS with its own kernel, which makes it heavy and slow to boot. A container, like Docker, shares the host OS kernel and only runs the application and its dependencies. Containers are lightweight, faster, and more efficient for deploying microservices.”
+
+ Q7: How does version control help in DevOps?
+“Version control, like Git, helps in tracking code changes, collaboration, and rollback. In DevOps, it’s important because CI/CD pipelines fetch code from version control systems. It ensures that every team member works on the latest code and any bugs can be traced to specific commits.”
+
+ Q8: What is Infrastructure as Code (IaC)? Have you used any tools for it?
+“Infrastructure as Code means writing code to manage and provision infrastructure, instead of doing it manually. I have explored Terraform, which allows us to define AWS resources like EC2, S3, and VPCs in .tf files and deploy them using simple commands.”
+
+ Q9: How do you take a backup of files in Linux and upload to AWS S3?
+“I use shell scripts to automate the process. First, I create a compressed .tar.gz backup using tar, then use the AWS CLI command aws s3 cp to upload it to a specified S3 bucket. I’ve also used cron to schedule this daily.”
+
+ Q10: What are some common Docker commands you use?
+“Some common commands I use are:
+docker build to build an image,
+docker run to start a container,
+docker ps to list running containers,
+docker exec to run commands inside a container,
+and docker-compose up to run multi-container apps.”
+
+ Q11: How do you ensure high availability in a production environment?
+“To ensure high availability, I use load balancers to distribute traffic, auto-scaling groups to handle increased load, and monitoring tools to detect failures early. Also, I prefer containerized deployment so that services can quickly recover or be restarted.”
+
+ Q12: What is a Jenkins pipeline? Have you built one?
+“A Jenkins pipeline is a script (usually written in Groovy) that defines the steps to build, test, and deploy applications. Yes, I have created a pipeline that pulled code from GitHub, built a Docker image, ran tests, and deployed to an EC2 instance.”
+
+ Q13: How would you secure a Jenkins setup?
+“I would secure Jenkins by setting up proper user roles, enabling authentication, hiding sensitive credentials using the credentials plugin, and regularly updating Jenkins and its plugins to avoid vulnerabilities.”
+
+ Q14: What’s your approach when learning a new DevOps tool?
+“I usually start with official documentation and video tutorials. Then I try to use the tool in a small practice project. Hands-on learning helps me understand better. For example, I learned Prometheus by setting it up on my own VM and monitoring basic metrics.”
+
+ Q15: Why do you want to join our company ?
+“I’m excited by the way Arcitech combines AI and cloud technologies. I want to be part of a team that works on modern, scalable systems. As a fresher, I’m looking for an opportunity to learn, grow, and contribute using the DevOps skills I’ve already started building.”
+
+
+
